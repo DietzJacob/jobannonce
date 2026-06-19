@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sådan skriver du en god jobannonce · & Dietz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf7f2; --ink:#211f1d; --muted:#776f63; --soft:#5c564c;
+    --line:#ece4d7; --rust:#b5613c; --rust-soft:#f6ece4; --card:#ffffff;
+    --display:'Spectral',Georgia,serif;
+    --ui:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--ui); line-height:1.65; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:740px; margin:0 auto; padding:60px 24px 100px;}
+  .brand{font-family:var(--ui); font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--rust); margin-bottom:18px;}
+  h1{font-family:var(--display); font-weight:600; font-size:40px; line-height:1.12; letter-spacing:-.015em; margin:0 0 8px;}
+  .kicker{font-family:var(--ui); font-size:15px; color:var(--muted); margin:0 0 30px;}
+  .rygrad{font-family:var(--display); font-style:italic; font-size:19px; line-height:1.5; color:var(--soft);
+    background:var(--rust-soft); border-radius:14px; padding:22px 26px; margin:0 0 40px; position:relative;}
+  .rygrad b{font-style:normal; font-weight:600; color:var(--rust);}
+  details{background:var(--card); border:1px solid var(--line); border-radius:14px; margin:0 0 16px; overflow:hidden;}
+  details[open]{box-shadow:0 6px 30px rgba(33,31,29,.06);}
+  summary{list-style:none; cursor:pointer; padding:20px 24px; display:flex; align-items:center; gap:16px;}
+  summary::-webkit-details-marker{display:none;}
+  .num{flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--rust); color:#fff;
+    font-family:var(--display); font-weight:600; font-size:16px; display:flex; align-items:center; justify-content:center;}
+  .stitle{font-family:var(--display); font-weight:600; font-size:20px; line-height:1.25; letter-spacing:-.01em;}
+  .chev{margin-left:auto; color:var(--muted); transition:transform .22s; font-size:13px;}
+  details[open] .chev{transform:rotate(90deg);}
+  .body{padding:0 26px 24px 74px;}
+  .body p{margin:0 0 13px;}
+  .lbl-sub{font-family:var(--display); font-weight:600; font-size:16px; color:var(--ink); margin:16px 0 4px;}
+  .ex{font-family:var(--display); font-style:italic; font-size:16px; line-height:1.55; color:var(--soft);
+    background:var(--rust-soft); border-radius:10px; padding:14px 18px; margin:10px 0;}
+  .body ul.bul{margin:8px 0 14px; padding-left:20px;}
+  .body ul.bul li{margin:6px 0;}
+  .klabel{font-family:var(--ui); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--rust); margin:18px 0 7px;}
+  /* nested areas */
+  .area{background:#fcfaf6; border:1px solid var(--line); border-radius:11px; margin:11px 0;}
+  .area>summary{padding:14px 18px; gap:12px;}
+  .acode{flex:0 0 auto; width:26px; height:26px; border-radius:7px; background:var(--ink); color:#fff;
+    font-size:13px; display:flex; align-items:center; justify-content:center;}
+  .area .stitle{font-size:16px;}
+  .area .body{padding:0 18px 18px 56px;}
+  /* self-check */
+  .check{background:var(--rust-soft); border-radius:11px; padding:14px 18px; margin-top:18px;}
+  .check .klabel{margin:0 0 6px;}
+  .check ul{margin:0; padding-left:18px;}
+  .check li{margin:5px 0; font-weight:500;}
+  footer{margin-top:40px; padding-top:20px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:baseline; color:var(--muted); font-size:13px;}
+  footer .fb{font-family:var(--display); font-weight:600; color:var(--rust); letter-spacing:.04em;}
+  @media print{
+    body{background:#fff;} .wrap{padding:0; max-width:100%;}
+    details{break-inside:avoid; box-shadow:none; border-color:#ddd;} .chev{display:none;}
+    .area{border-color:#e2e2e2;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">& Dietz · Rekruttering</div>
+  <h1>Sådan skriver du en god jobannonce</h1>
+
+  <div class="rygrad">
+    <b>Rygraden:</b> En jobannonce er virksomhedens invitation til at åbne døren for de bedste kandidater. Gør dig lige så umage med annoncen, som du forventer, kandidaterne gør med deres ansøgning. Fyld den med jeres hverdag, ambitioner, det der gør jobbet meningsfuldt, og en ægte fortælling om menneskerne og arbejdet hos jer.
+  </div>
+
+  <!-- 1 -->
+  <details open>
+    <summary><span class="num">1</span><span class="stitle">Annoncen sorterer kandidaterne – og kandidaterne sorterer jer</span><span class="chev">▶</span></summary>
+    <div class="body">
+      <p>Brug tiden på at lave rigtigt indhold. Giv den substans, vær konkret, og gør dig lige så umage, som du forventer, kandidaterne gør, når de beskriver deres erfaring, motivation og resultater.</p>
+      <p>Ligesom du bliver træt af lange, sjælløse AI-skrevne ansøgninger, bliver kandidaterne trætte af lange, sjælløse AI-skrevne jobannoncer. Gode historier bygges på ægte indhold: konkrete opgaver og virkelige eksempler fra jeres hverdag. Det gør annoncen interessant og får de rigtige til at søge.</p>
+      <p>Brug AI til struktur og korrektur. Indholdet skal komme fra jer: historierne, ambitionerne, menneskene og det, der gør jobbet værd at søge.</p>
+      <div class="check">
+        <div class="klabel">Spørg dig selv</div>
+        <ul>
+          <li>Har jeg gjort mig lige så umage, som jeg forventer af kandidaten?</li>
+          <li>Er der ægte indhold og historier, eller bare beige AI-tekst?</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- 2 -->
+  <details>
+    <summary><span class="num">2</span><span class="stitle">Opbygningen: de 5 områder, du altid har med</span><span class="chev">▶</span></summary>
+    <div class="body">
+      <p>Skelettet er altid nogenlunde det samme. Kandidaten skal hurtigt kunne finde rundt. Kunsten er ikke at opfinde nye rubrikker, men at fylde de fem klassiske områder med jeres eget indhold.</p>
+
+      <details class="area">
+        <summary><span class="acode">①</span><span class="stitle">Titel + kernebudskab</span><span class="chev">▶</span></summary>
+        <div class="body">
+          <div class="lbl-sub">Titlen</div>
+          <p>Skriv den præcise og genkendelige jobtitel, så kandidaterne kan finde stillingen. Tag udgangspunkt i den titel, I selv bruger, men sørg for, at det også er den, markedet kender. En "pedel" hedder i dag en "teknisk servicemedarbejder", og bankens gamle "kasserer" er blevet til "kunderådgiver". Rollerne har ændret sig, og navnene med dem. Samtidig er der gået inflation i titler, og nogle virksomheder opfinder helt nye betegnelser for at skille sig ud. Det kan i enkelte tilfælde være en god idé, men oftere gør det billedet mere uklart. Brug den titel, der bedst beskriver rollen, og som kandidaterne faktisk søger efter.</p>
+          <div class="lbl-sub">Kernebudskabet</div>
+          <p>Det er her, du adskiller dig fra de ti andre annoncer. Sammenlign:</p>
+          <div class="ex">"Bliv kunderådgiver i en bank med gamle dyder i nye tider"</div>
+          <p>med</p>
+          <div class="ex">"Ambitiøs og forretningsdrevet kunderådgiver i en bank med dynamiske kollegaer og klassisk bankhåndværk."</div>
+          <p>Samme indhold. Men den første er mere konkret, lettere at huske og har personlighed.</p>
+        </div>
+      </details>
+
+      <details class="area">
+        <summary><span class="acode">②</span><span class="stitle">Om jer &amp; kulturen</span><span class="chev">▶</span></summary>
+        <div class="body">
+          <p>Fortæl, hvem I er, hvad I laver, og hvordan I faktisk arbejder sammen. Ikke kun værdiord på en planche, men konkrete beskrivelser af hverdagen. Hvem bliver kandidatens nærmeste kolleger? Hvordan ser en typisk uge ud? Hvad møder man, når man træder ind ad døren?</p>
+          <p style="color:var(--muted); font-size:14px;">Tre måder at fortælle den samme historie på – vælg den tone, der passer til stillingen:</p>
+          <div class="klabel">Version 1 · Det konkrete møde</div>
+          <div class="ex">"Du træder ind i lyse lokaler midt i Aabenraa, hvor der dufter af kaffe og summer af samtaler om alt fra boligdrømme til budgetter. Her sidder 20 kolleger, som faktisk har tid til at tænke sig om, før de rådgiver. Din nærmeste makker bliver en erfaren rådgiver, du kan vende de svære sager med, og en kundekreds, du selv får lov at passe på år efter år. Hos os bliver kunderne ikke sendt videre i et system, de bliver kendt. Vi driver bank på en lidt gammeldags måde: vi siger det, vi mener, og vi bliver. Lyder det som noget for dig?"</div>
+          <div class="klabel">Version 2 · En typisk uge</div>
+          <div class="ex">"Hvordan ser en uge ud? Måske starter du mandag med at hjælpe et ungt par med deres første bolig, tirsdag sparrer du med en kollega om en kompleks kreditsag, og fredag ringer en kunde, du har fulgt i ti år, for at høre dig ad, før hun siger ja til sit livs investering. Vi er 20 i afdelingen, og vi løser opgaverne sammen. Ingen står alene med en svær vurdering. Vi rådgiver ud fra, hvad der er rigtigt for kunden, ikke hvad der sælger bedst. Det er derfor, folk bliver hos os i årevis, både kunder og kolleger. Vil du være en af dem?"</div>
+          <div class="klabel">Version 3 · Den anderledes bank</div>
+          <div class="ex">"De fleste banker taler om relationer. Vi lever af dem. I vores afdeling på 20 kolleger i hjertet af Aabenraa måler vi ikke succes på, hvor hurtigt vi kan ekspedere en kunde, men på, om de stadig ringer til os om fem år. Du får din egen kundekreds, faglig sparring lige ved siden af dig, og tid til faktisk at gøre arbejdet ordentligt. Vi er ambitiøse på kundernes vegne og ærlige, når noget ikke kan lade sig gøre. Er du træt af at sælge og vil du hellere rådgive, så er det her, du hører til."</div>
+          <div class="klabel">Sådan finder du indholdet</div>
+          <p>Interview dine kolleger. Spørg til de mest spændende opgaver, de største succeser og det, der giver mest mening i hverdagen. Der dukker næsten altid en historie, en vinkel eller et citat op, som gør annoncen stærkere.</p>
+        </div>
+      </details>
+
+      <details class="area">
+        <summary><span class="acode">③</span><span class="stitle">Arbejdsopgaverne</span><span class="chev">▶</span></summary>
+        <div class="body">
+          <p>Beskriv jobbet før personen, og gør det konkret. Saml opgaverne i 3-5 hovedområder frem for en lang liste. Beskriv dem, som de faktisk ser ud i virkeligheden.</p>
+          <div class="klabel">Eksempel</div>
+          <ul class="bul">
+            <li>Rådgive dine egne 600-850 privatkunder om økonomi, bolig og pension og være deres faste kontakt gennem mange år.</li>
+            <li>Regne på boligfinansiering og lægge budgetter, så kundernes boligdrømme kan blive til virkelighed.</li>
+            <li>Lave kreditvurderinger og indstille sager, så vi siger ja til de rigtige kunder og kan stå inde for beslutningerne.</li>
+          </ul>
+          <p>Princippet er enkelt: Det er som regel "brilliant basics". Lad være med at puste opgaverne op til noget større, end de er. Find værdien i det arbejde, der fylder 80 % af hverdagen. Det er som regel dér, jobbet skaber mest værdi.</p>
+        </div>
+      </details>
+
+      <details class="area">
+        <summary><span class="acode">④</span><span class="stitle">Kvalifikationer</span><span class="chev">▶</span></summary>
+        <div class="body">
+          <p>Hold dig til de få, konkrete kvalifikationer, der faktisk betyder noget. Gerne de tre vigtigste – højst fem. Sæt de vigtigste først og sidst, og del dem gerne op i "skal" og "nice-to-have".</p>
+          <p>Fokusér på det, du faktisk kan vurdere: uddannelse, erfaring, tidligere roller, ledererfaring og dokumenterede resultater.</p>
+          <p>Der må gerne være en eller to formuleringer, der peger på personlighed. Men beskriv hellere de kompetencer og erfaringer, der kræver de personlige egenskaber, du leder efter. En kandidat med erfaring inden for relationssalg eller rådgivning vil ofte være udadvendt, imødekommende og vedholdende. Men det er lettere at vurdere erfaringen end ordene.</p>
+        </div>
+      </details>
+
+      <details class="area">
+        <summary><span class="acode">⑤</span><span class="stitle">Sådan søger du</span><span class="chev">▶</span></summary>
+        <div class="body">
+          <p>Vær konkret, og læg planen frem. Fortæl, om der er en ansøgningsfrist, eller om I holder samtaler løbende. Kandidaten skal vide, hvad der sker.</p>
+          <p>Beskriv de fordele, I kan tilbyde: uddannelsesforløb, udviklingsmuligheder, sociale aktiviteter eller andre ting, der viser, hvordan I investerer i mennesker. Sig også gerne noget om lønrammen.</p>
+          <p>Skriv mindst én kontaktperson på annoncen – gerne en leder eller en kommende kollega. Det gør vejen ind mere menneskelig. Til stillinger med mange ansøgere kan kontakten med fordel begrænses til bestemte tidspunkter eller mail.</p>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <!-- 3 -->
+  <details>
+    <summary><span class="num">3</span><span class="stitle">Vær ærlig – også om det, der er krævende</span><span class="chev">▶</span></summary>
+    <div class="body">
+      <p>Vær ærlig om det, der er krævende ved jobbet. Det er ikke en advarsel. Det er et signal om ambition. Når du fortæller, at der er høje forventninger eller komplekse opgaver, viser du samtidig, at I leder efter en person, der vil bidrage og har fagligheden til det.</p>
+      <p>Du skal ikke skræmme nogen væk, men giv et ærligt billede af virkeligheden: <em>"Vi har mange kunder med høje forventninger"</em> eller <em>"Opgaverne er komplekse og kræver, at du kan arbejde selvstændigt."</em> De rigtige kandidater bliver ofte tiltrukket af netop det.</p>
+      <div class="check">
+        <div class="klabel">Spørg dig selv</div>
+        <ul>
+          <li>Har jeg sagt ærligt, hvad der er krævende ved jobbet?</li>
+          <li>Signalerer det ambition, eller skræmmer det bare væk?</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- 4 -->
+  <details>
+    <summary><span class="num">4</span><span class="stitle">Skriv til kandidaten: vis udvikling og jeres måde at arbejde på</span><span class="chev">▶</span></summary>
+    <div class="body">
+      <p>Lad sproget vise, at man kan udvikle sig hos jer. Undgå floskler som "gode udviklingsmuligheder". Vis det i stedet gennem de konkrete eksempler. Beskriv, hvordan I sparrer med hinanden, hjælper hinanden i svære situationer eller investerer i læring gennem uddannelse og træning.</p>
+      <p>Vis den reelle vej videre – gerne gennem et eksempel på en medarbejder, der har udviklet sig i organisationen.</p>
+      <div class="klabel">Eksempel</div>
+      <div class="ex">"Du får en fast mentor de første måneder, så du aldrig står alene med en svær sag. Vores uddannelseskonsulent lægger en konkret plan for dit første år, fra interne kreditkurser til relevante certificeringer. Og vi mener det: to af vores nuværende rådgivere startede som elever og sidder i dag med deres egen kundeportefølje."</div>
+      <div class="check">
+        <div class="klabel">Spørg dig selv</div>
+        <ul>
+          <li>Viser sproget reel udvikling og samarbejde gennem konkrete eksempler?</li>
+          <li>Bruger jeg klicheer, eller beskriver jeg virkeligheden?</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- 5 -->
+  <details>
+    <summary><span class="num">5</span><span class="stitle">Læs den, som var du kandidaten, og test den</span><span class="chev">▶</span></summary>
+    <div class="body">
+      <p>Inden du publicerer annoncen: læs den som kandidaten. Hvis du var den person, I leder efter – ville du så få lyst til at søge? Få gerne en kollega eller en person udefra til at læse den igennem med friske øjne. Brug spørgsmålene under hvert afsnit som tjekliste, og ret til, indtil annoncen er skarp, troværdig og let at læse.</p>
+      <div class="check">
+        <div class="klabel">Spørg dig selv</div>
+        <ul>
+          <li>Hvis jeg var den kandidat, vi leder efter – ville jeg så få lyst til at søge?</li>
+          <li>Lever virkeligheden, samtalerne og onboardingen op til det, vi lover i annoncen?</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <footer>
+    <span>Sådan skriver du en god jobannonce</span>
+    <span class="fb">& DIETZ</span>
+  </footer>
+</div>
+</body>
+</html>
